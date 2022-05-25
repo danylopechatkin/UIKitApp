@@ -9,11 +9,29 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
+    @IBOutlet weak var segmentedControl: UISegmentedControl!
+    @IBOutlet weak var mainLabel: UILabel!
+    
+    
+    
+   
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+      
+        mainLabel.text = ""
+        mainLabel.font = mainLabel.font.withSize(35)
+        mainLabel.textAlignment = .center
+        mainLabel.numberOfLines = 2
+        
+        segmentedControl.insertSegment(withTitle: "Third", at: 2, animated: false)
+        
+        
     }
 
-
+    @IBAction func segmentedControlAction() {
+    }
+    
 }
 
