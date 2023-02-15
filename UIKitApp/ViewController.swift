@@ -15,12 +15,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        mainLabel.text = ""
+        mainLabel.text = "Antonina"
         mainLabel.font = mainLabel.font.withSize(35)
         mainLabel.textAlignment = .center
+        mainLabel.textColor = .purple
         
-        
-        
+    
     }
 
     @IBAction func segmentedControlAction() {
