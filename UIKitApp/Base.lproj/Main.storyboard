@@ -26,7 +26,7 @@
                                             <segment title="Second"/>
                                         </segments>
                                         <connections>
-                                            <action selector="segmentedControl2" destination="BYZ-38-t0r" eventType="valueChanged" id="atw-sr-Rho"/>
+                                            <action selector="segmentedControlAction" destination="BYZ-38-t0r" eventType="valueChanged" id="atw-sr-Rho"/>
                                         </connections>
                                     </segmentedControl>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KJE-RC-kG8">

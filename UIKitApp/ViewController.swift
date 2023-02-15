@@ -15,9 +15,15 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        mainLabel.text = ""
+        mainLabel.font = mainLabel.font.withSize(35)
+        mainLabel.textAlignment = .center
+        
+        
+        
     }
 
-    @IBAction func segmentedControl2() {
+    @IBAction func segmentedControlAction() {
     }
     
 }
