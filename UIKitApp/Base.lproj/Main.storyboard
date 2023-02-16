@@ -17,10 +17,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="2TV-57-Nbx">
-                                <rect key="frame" x="20" y="74" width="353" height="94"/>
+                                <rect key="frame" x="20" y="74" width="353" height="299.66666666666669"/>
                                 <subviews>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="7ZD-ol-9sD">
-                                        <rect key="frame" x="0.0" y="0.0" width="353" height="32"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="35.333333333333336"/>
                                         <segments>
                                             <segment title="First"/>
                                             <segment title="Second"/>
@@ -30,11 +30,27 @@
                                         </connections>
                                     </segmentedControl>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KJE-RC-kG8">
-                                        <rect key="frame" x="0.0" y="63" width="353" height="31"/>
+                                        <rect key="frame" x="0.0" y="66.333333333333343" width="353" height="34.333333333333343"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="hyT-fR-N8A">
+                                        <rect key="frame" x="-2" y="132.66666666666666" width="357" height="35.333333333333343"/>
+                                        <connections>
+                                            <action selector="sliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="WV8-k6-NL4"/>
+                                        </connections>
+                                    </slider>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Tv-fo-VQ6">
+                                        <rect key="frame" x="0.0" y="199" width="353" height="34.333333333333343"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C6z-12-cvp">
+                                        <rect key="frame" x="0.0" y="265.33333333333331" width="353" height="34.333333333333314"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Done"/>
+                                    </button>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -50,6 +66,7 @@
                     <connections>
                         <outlet property="mainLabel" destination="KJE-RC-kG8" id="eoR-3t-RQB"/>
                         <outlet property="segmentedControl" destination="7ZD-ol-9sD" id="2wH-Nk-cUk"/>
+                        <outlet property="slider" destination="hyT-fR-N8A" id="hHv-Y0-pWw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
