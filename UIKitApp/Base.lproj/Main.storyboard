@@ -41,15 +41,18 @@
                                             <action selector="sliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="WV8-k6-NL4"/>
                                         </connections>
                                     </slider>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Tv-fo-VQ6">
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Tv-fo-VQ6">
                                         <rect key="frame" x="0.0" y="199" width="353" height="34.333333333333343"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" textContentType="name"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C6z-12-cvp">
                                         <rect key="frame" x="0.0" y="265.33333333333331" width="353" height="34.333333333333314"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="gray" title="Done"/>
+                                        <connections>
+                                            <action selector="doneButtonTest" destination="BYZ-38-t0r" eventType="touchUpInside" id="71E-N6-1cp"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -67,6 +70,7 @@
                         <outlet property="mainLabel" destination="KJE-RC-kG8" id="eoR-3t-RQB"/>
                         <outlet property="segmentedControl" destination="7ZD-ol-9sD" id="2wH-Nk-cUk"/>
                         <outlet property="slider" destination="hyT-fR-N8A" id="hHv-Y0-pWw"/>
+                        <outlet property="textField" destination="6Tv-fo-VQ6" id="kAh-6q-iSO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
